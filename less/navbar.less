@@ -1,0 +1,63 @@
+.navbar{
+	position: fixed;
+	width: 100%;
+	grid-area: nav;
+	height: @navbar-height;
+	background-color: @navbar-background;
+	display: grid;
+	grid-template-columns: 1fr 2fr 2fr 1fr 2fr 2fr 1fr;
+	grid-template-areas:" .  n1 n2 brand n3 n4 .";
+	font-family: 'Cabin', sans-serif;
+	color: @brand-color;
+	letter-spacing: 0.2rem;
+	text-transform: uppercase;
+	border: 1px solid transparent;
+
+	.scrolling{
+		background-color: @navbar-background-scroll;
+	}
+
+	.section1{
+		grid-area: n1;
+	}
+	.section2{
+		grid-area: n2;
+	}
+	.section3{
+		grid-area: n3;
+	}
+	.section4{
+		grid-area: n4;
+	}
+	.nav-item{
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: @navbar-item-font;
+		&:hover{
+			color: @navbar-item-font-hover;
+		}
+
+		.active{
+			color: @brand-color;
+		}
+	}
+	.nav-brand{
+		grid-area: brand;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: @navbar-brand-font;
+	}
+}
+.img-brand{
+	height: @navbar-height;
+}
+.active{
+	color: @brand-color !important;
+}
+.scrolling{
+	background-color: @navbar-background-scroll !important;
+	border-bottom: 1px solid darken(@navbar-background-scroll, 5%);
+}

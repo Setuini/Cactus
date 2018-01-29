@@ -1,0 +1,59 @@
+.features-wrapper{
+	display: grid;
+	grid-template-columns: 2fr 2fr 2fr 4fr 2fr 2fr 2fr;
+	grid-template-rows: 40vh 50vh 50vh;
+	grid-template-areas:
+	". .. he he he .. ."
+	". b1 b1 b2 b3 b3 .";
+	//grid-gap: 2vw;
+	font-family: 'Cabin', sans-serif;
+}
+
+.features-heading-wrapper{
+	margin-top: 20vh;
+	grid-area: he;
+}
+
+.features-heading{
+	font-size: 2rem;
+	letter-spacing: .4rem;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.features-subheading{
+	padding: 5px;
+	font-size: 1rem;
+	letter-spacing: .2rem;
+	text-align: center;
+	border-bottom: 1px solid lighten(@brand-font, 50%);
+}
+
+.box{
+	//background-color: #EBEAE6;
+}
+.b1{
+	grid-area: b1;
+}
+.b2{
+	grid-area: b2;
+}
+.b3{
+	grid-area: b3;
+}
+.box-img{
+	width: 100%;
+}
+.box-heading{
+	font-size: 1.8rem;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	color: @brand-font;
+}
+.box-text{
+	font-size: 1rem;
+	line-height: 1.5rem;
+	text-align: center;
+	color: lighten(@brand-font, 50%);
+}
