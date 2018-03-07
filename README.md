@@ -1,7 +1,6 @@
-# Cactus
+## Cactus
 
-is a template I startet to try out the new CSS Grid properties
-
+Static Web Template using the new CSS Grid properties
 
 ### Run
 
